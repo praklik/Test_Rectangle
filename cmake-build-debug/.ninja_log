@@ -1,0 +1,10 @@
+# ninja log v6
+7	612	7646469238544053	CMakeFiles/Multifile_project_rectangle.dir/Header.cpp.obj	a882960409d75a10
+10	691	7646477839751156	CMakeFiles/Multifile_project_rectangle.dir/Header.cpp.obj	a882960409d75a10
+4	570	7646485012952279	CMakeFiles/Multifile_project_rectangle.dir/main.cpp.obj	e4cc2438eea5e771
+14	609	7646486323499694	CMakeFiles/Multifile_project_rectangle.dir/main.cpp.obj	e4cc2438eea5e771
+610	725	7646486329460236	Multifile_project_rectangle.exe	d7129586603847d2
+24	986	7646499349345763	CMakeFiles/Multifile_project_rectangle.dir/main.cpp.obj	e4cc2438eea5e771
+986	1137	7646499358974341	Multifile_project_rectangle.exe	d7129586603847d2
+5	652	7646503720566765	CMakeFiles/Multifile_project_rectangle.dir/Header.cpp.obj	a882960409d75a10
+653	752	7646503727045177	Multifile_project_rectangle.exe	d7129586603847d2
