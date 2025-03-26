@@ -6,13 +6,10 @@
 using namespace std;
 
 struct Point { int x, y;};
-
 struct Rectangle {Point A, B;};
 
 void Input(istream& is, Rectangle& rect);
-
 void Read(ofstream& os, const Rectangle& rect);
-
 void PrintInfo(const Rectangle& rect);
 
 int main()
@@ -33,25 +30,22 @@ int main()
 	bool fileInput = false;
 	bool fileRead = false;
 
-	do
-	{
+	do {
 		PrintMenu();
 		cin >> choice;
 
-		switch (choice)
-		{
+		switch (choice) {
 		case '1':	cout << "\nВведите имя файла: ";
 					cin >> filename;
 					fin.open(filename);
-					if (!fin.is_open())
-					{
+					if (!fin.is_open()) {
 						cout << "Такого файла не существует!";
 						_getch();
 						fileInput = false;
 						break;
-					}
-					else
+					} else {
 						fileInput = true;
+					}
 					break;
 
 		case '2':	cout << "\nВведите имя файла: ";
@@ -59,16 +53,14 @@ int main()
 					fout.open(filename, ios::app);
 					break;
 
-		case '3':	if(!fileInput)
-					{
+		case '3':	if(!fileInput) {
 						break;
 					}
 					Input(fin, rect);
 					fileRead = true;
 					break;
 
-		case '4':	if (fileRead && fout.is_open())
-					{
+		case '4':	if (fileRead && fout.is_open()) {
 						Read(fout, rect);
 					}
 					break;
@@ -77,8 +69,7 @@ int main()
 					Input(cin, rect); fileRead = true;
 					break;
 
-		case '6':	if(fileRead)
-					{
+		case '6':	if(fileRead) {
 						PrintInfo(rect);
 					}
 					break;
